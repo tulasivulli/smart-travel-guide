@@ -1,0 +1,72 @@
+/* Basic body styling to avoid overlap with fixed navbar */
+body {
+    font-family: Arial, sans-serif;
+    background: url('background imgs/sun\ sea.avif') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding-top: 80px; /* Adjust if your navbar is taller */
+}
+
+/* Container for all place cards */
+.places-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Two columns */
+    gap: 30px;
+    padding: 20px 60px;
+    justify-items: center;
+}
+
+/* Individual place card */
+.place {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 300px;
+    transition: transform 0.3s ease;
+    text-align: center;
+    padding: 16px;
+}
+
+.place:hover {
+    transform: translateY(-5px);
+}
+
+/* Image styling */
+.place img {
+    width: 320%;
+    height: 280px;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Place name */
+.place h3 {
+    margin-top: 12px;
+    font-size: 18px;
+    color: #333;
+}
+
+/* Button styling */
+.btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 24px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+/* Make it responsive on smaller screens */
+@media screen and (max-width: 768px) {
+    .places-container {
+        grid-template-columns: 1fr; /* Single column on small screens */
+        padding: 20px 20px;
+    }
+}

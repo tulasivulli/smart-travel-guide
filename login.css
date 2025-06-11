@@ -1,0 +1,149 @@
+/* === COLOR PALETTE === */
+:root {
+  --primary-color: #007BFF;      /* Sky Blue */
+  --secondary-color: #FFD166;    /* Sun Yellow */
+  --accent-color: #06D6A0;       /* Leaf Green */
+  --background-color: #FAFAFA;   /* Off-White */
+  --text-color: #2D3142;         /* Charcoal Gray */
+  --input-bg: #ffffff;
+  --input-border: #ccc;
+  --error-color: #ff6b6b;
+  --box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* === BASE STYLES === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-image: url('background imgs/plain.avif'); /* Replace with your actual image path */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* === CONTAINER === */
+.container {
+  background-color: white;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: var(--box-shadow);
+  width: 400px;
+  transition: 0.3s ease-in-out;
+}
+
+/* === BRAND TITLE === */
+.brand-title {
+  font-size: 2rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* === FORM TITLE === */
+.form-title {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* === INPUT GROUP === */
+.input-group {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.input-group i {
+  position: absolute;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  color: var(--primary-color);
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px 10px 10px 36px;
+  border: 1px solid var(--input-border);
+  border-radius: 8px;
+  background-color: var(--input-bg);
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.input-group input:focus {
+  border-color: var(--primary-color);
+}
+
+.input-group label {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.85rem;
+  color: var(--text-color);
+}
+
+/* === BUTTON === */
+.btn {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--accent-color);
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #04b78d;
+}
+
+/* === LINKS + SWITCH BUTTON === */
+.links {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.links p {
+  margin-bottom: 0.5rem;
+}
+
+.links button {
+  background: none;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.links button:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* === RECOVER LINK === */
+.recover a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  font-size: 0.85rem;
+}
+
+.recover a:hover {
+  text-decoration: underline;
+}

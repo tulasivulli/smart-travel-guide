@@ -1,0 +1,95 @@
+/* place_details.css */
+
+/* Body adjustment for consistent background and spacing */
+body {
+    background: url('background imgs/wall.avif') no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding-top: 80px; /* to avoid overlap with navbar */
+    color: #333;
+}
+
+/* Main container */
+.place-details {
+    max-width: 750px;
+    background: #fff;
+    margin: 40px auto 60px;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    line-height: 1.6;
+}
+
+/* Place name heading */
+.place-details h1 {
+    font-size: 2.4rem;
+    margin-bottom: 20px;
+    color: #222;
+    font-weight: 700;
+    border-bottom: 3px solid #007BFF; /* changed to blue */
+    padding-bottom: 8px;
+}
+
+/* Each detail paragraph */
+.place-details p {
+    font-size: 1.1rem;
+    margin: 12px 0;
+}
+
+/* Bold label within each paragraph */
+.place-details p strong {
+    color: #007BFF; /* changed to blue */
+    font-weight: 600;
+    min-width: 110px;
+    display: inline-block;
+}
+
+/* Convert newlines in description nicely */
+.place-details p.description {
+    white-space: pre-wrap;
+}
+
+/* Back button container for centering */
+.place-details .btn-container {
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* Styled back button */
+.place-details a button {
+    background-color: #007BFF; /* changed to blue */
+    color: white;
+    padding: 12px 28px;
+    font-size: 1.15rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.25s ease;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.4);
+}
+
+.place-details a button:hover {
+    background-color: #0056b3; /* darker blue on hover */
+    box-shadow: 0 6px 12px rgba(0, 86, 179, 0.6);
+}
+
+/* Responsive: smaller padding on mobile */
+@media screen and (max-width: 480px) {
+    .place-details {
+        padding: 20px 20px;
+        margin: 20px auto 40px;
+    }
+
+    .place-details h1 {
+        font-size: 1.8rem;
+    }
+
+    .place-details p {
+        font-size: 1rem;
+    }
+
+    .place-details p strong {
+        min-width: 90px;
+    }
+}

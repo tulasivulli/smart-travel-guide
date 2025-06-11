@@ -1,0 +1,76 @@
+/* Background for the full page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background imgs/mountains.avif'); /* Use your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Main content container */
+.district-page {
+    padding: 40px;
+    text-align: center;
+    color: white;
+    
+}
+
+/* Search box styling */
+#searchInput {
+    padding: 10px;
+    width: 60%;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    outline: none;
+}
+
+/* Container for all district blocks */
+#districtContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Individual district block with blur */
+.district-block {
+    width: 200px;
+    height: 100px;
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Blurred background layer */
+.district-block::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px); /* Blur only the background */
+    z-index: 0;
+}
+
+/* Text inside the block */
+.district-block span {
+    position: relative;
+    z-index: 1;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+/* Hover effect */
+.district-block:hover {
+    transform: scale(1.05);
+}

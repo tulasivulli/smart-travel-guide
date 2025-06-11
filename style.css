@@ -1,0 +1,114 @@
+/* style.css – Global Styles */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+h1, h2, h3, h4 {
+    color: #222;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* General container */
+.container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+/* Card-style place display (optional use) */
+.place {
+    background-color: white;
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.place img {
+    width: 100%;
+    max-width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.place h3 {
+    margin-top: 10px;
+    color: #444;
+}
+
+/* Utility classes */
+.text-center {
+    text-align: center;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+/* Remove underline and any hover underline or border */
+a {
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+/* Ensure hover does not show underline or border */
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+    border: none;
+    outline: none;
+}

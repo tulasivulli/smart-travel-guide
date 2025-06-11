@@ -1,0 +1,74 @@
+/* Background for the full page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('background imgs/sunset.avif'); /* Use your image path */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+
+/* Page title */
+.text-center {
+    text-align: center;
+    padding: 30px 10px 10px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Category container with one item per row */
+.category-container {
+    display: flex;
+    flex-direction: column;     /* Stack category blocks vertically */
+    align-items: center;        /* Center the blocks horizontally */
+    gap: 20px;
+    padding: 30px;
+}
+
+/* Individual category box */
+.category-box {
+    position: relative;
+    width: 80%;
+    max-width: 600px;
+    height: 100px;
+    text-decoration: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 18px;
+
+    /* Add new stacking context */
+    z-index: 0;
+}
+
+/* Blurred background effect behind content */
+.category-box::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(8px);
+    z-index: -1; /* 👈 Ensure it's behind everything inside .category-box */
+}
+
+
+/* Hover effect */
+.category-box:hover {
+    transform: scale(1.03);
+}
+
+/* No data message */
+.no-data {
+    text-align: center;
+    font-size: 20px;
+    padding: 40px;
+    color: #ffcccc;
+}
