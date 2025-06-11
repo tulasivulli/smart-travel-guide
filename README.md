@@ -26,8 +26,4 @@ Smart Travel Guide is a full-stack tourism website built to help users explore o
 
 ---
 
-## 🚀 How to Run Locally
 
-1. Clone the repository  
-   ```bash
-   git clone https://github.com/tulasivulli/smart-travel-guide.git
