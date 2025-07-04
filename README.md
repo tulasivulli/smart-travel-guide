@@ -1,3 +1,4 @@
+---
 # smart-travel-guide
 A full-stack tourism website for exploring 500+ destinations across Andhra Pradesh with detailed travel info.
 
@@ -30,3 +31,4 @@ Smart Travel Guide is a full-stack tourism website built to help users explore o
 
 📽️ [Watch on Google Drive](https://drive.google.com/file/d/1RteG_1rHqSiK-koIAjznBbRCX1ZaElmI/view?usp=sharing)
 
+---
