@@ -26,4 +26,7 @@ Smart Travel Guide is a full-stack tourism website built to help users explore o
 
 ---
 
+## 🎥 Smart Travel Website Video
+
+📽️ [Watch on Google Drive](https://drive.google.com/file/d/1RteG_1rHqSiK-koIAjznBbRCX1ZaElmI/view?usp=sharing)
 
